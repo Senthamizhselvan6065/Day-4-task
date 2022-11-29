@@ -20,6 +20,8 @@ request.onload = function () {
     console.log(i.flags);
   }
 };
+
+
 //Question .3:
 
 var request = new XMLHttpRequest();
