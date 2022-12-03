@@ -1,10 +1,27 @@
 //Question .1:
-var obj1 = { name: "Person 1", age: 5 };
-console.log(obj1.name);
-console.log(obj1.age);
-var obj2 = { age: 5, name: "Person 2" };
-console.log(obj2.name);
-console.log(obj2.age);
+var obj1 = {
+    name:"Person 1",
+    age:5
+}
+var a= JSON.stringify(obj1);
+var obj2 = {
+    age:5,
+    name:"Person 1"
+}
+var b = JSON.stringify(obj2);
+if(a===b)
+{
+    console.log("same");
+}
+else
+{
+    console.log("Not same");
+}
+
+//Output:
+{"name":"Person 1","age":5}
+{"age":5,"name":"Person 1"}
+Not same
 
 //Question .2:
 
